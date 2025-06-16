@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "AISC Official Website",
-  description: "AISC is dedicated to providing AI literacy through programs and events",
+  description:
+    "AISC is dedicated to providing AI literacy through programs and events",
 };
 
 type LayoutProps = {
