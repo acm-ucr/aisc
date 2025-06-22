@@ -1,1 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Pixelify Sans");
 @import "tailwindcss";
+
+@theme {
+    --color-aisc-blue: #51B7FF;
+    --color-aisc-pink: #FF43AD;
+    --color-aisc-black: #242424;
+    --color-aisc-gray: #2e2e2e;  
+    --color-aisc-lightgray: #cccccc; 
+
+    --font-aisc-main: "Raleway", serif;
+    --font-aisc-alt: "Pixelify Sans", serif; 
+}
