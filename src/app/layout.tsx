@@ -1,8 +1,20 @@
 import "./globals.css";
-import { Raleway } from "next/font/google";
+import { Raleway, Pixelify_Sans } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 
-const raleway = Raleway({ subsets: ["latin"] });
+const raleway = Raleway({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "700"],
+  variable: "--raleway-text-font",
+});
+
+const pixelify = Pixelify_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400"],
+  variable: "--pixelify-serif-display-font",
+});
 
 export const metadata = {
   title: "AISC Official Website",
@@ -16,7 +28,7 @@ type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${raleway.variable} ${pixelify.variable}`}>
       <body className={raleway.className}>
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>
