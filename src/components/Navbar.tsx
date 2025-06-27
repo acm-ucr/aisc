@@ -22,10 +22,10 @@ const Navigation = () => {
             <div key={link}>
               <Link
                 href={link}
-                className={`${
+                className={`inline-block transition-transform duration-150 ${
                   pathName === link
-                    ? "text-aisc-yellow"
-                    : "duration-150 hover:scale-110"
+                    ? "text-aisc-yellow hover:scale-105"
+                    : "hover:scale-105"
                 }`}
               >
                 {title}
