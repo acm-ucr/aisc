@@ -38,6 +38,7 @@ const Navigation = () => {
           <Link
             href="https:/linktr.ee/aiscucr"
             className="duration 150 flex items-center rounded-full bg-white px-6 py-2 text-black hover:scale-105 md:px-6 lg:px-8"
+            target="_blank"
           >
             <div className="text-2xl lg:text-3xl">Join</div>
           </Link>
