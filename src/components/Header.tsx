@@ -2,26 +2,24 @@ import Image, { StaticImageData } from "next/image";
 
 type HeaderProps = {
   text: string;
-  image: StaticImageData | string;
+  image: StaticImageData;
   alt: string;
 };
 
-const Header = (props: HeaderProps) => {
+const Header = ({ text, image, alt }: HeaderProps) => {
   return (
     <>
-      <div className="from-aisc-blue to-aisc-pink h-1 w-screen bg-gradient-to-r"></div>
+      <span className="from-aisc-blue to-aisc-pink block h-1 w-full bg-gradient-to-r" />
       <div className="relative flex h-[10vh] flex-row items-center justify-center text-3xl md:h-[25vh] md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
         <Image
           className="w-screen object-cover opacity-75"
           fill
-          src={props.image}
-          alt={props.alt}
+          src={image}
+          alt={alt}
         />
-        <div className="flex flex-col items-center">
-          <p className="z-10 font-bold text-white">{props.text}</p>
-        </div>
+        <p className="z-10 font-bold text-white">{text}</p>
       </div>
-      <div className="to-aisc-blue from-aisc-pink h-1 w-screen bg-gradient-to-r"></div>
+      <span className="from-aisc-blue to-aisc-pink block h-1 w-full bg-gradient-to-r" />
     </>
   );
 };
