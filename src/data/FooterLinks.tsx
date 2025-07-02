@@ -32,7 +32,3 @@ export const footerLinks: socialMedia[] = [
     icon: <LiaLinkSolid className="h-10 w-10" />,
   },
 ];
-
-export const Address = {
-  address: "Address",
-};
