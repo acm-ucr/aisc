@@ -3,7 +3,7 @@ import { footerLinks } from "@/data/FooterLinks";
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <span className="from-aisc-blue to-aisc-pink block h-1 w-full bg-gradient-to-r" />
 
       <div className="font-aisc-main bg-aisc-black flex flex-row items-center justify-between px-14 pt-10 pb-18 text-white sm:text-xl md:text-2xl lg:text-3xl">
@@ -22,7 +22,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
