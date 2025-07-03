@@ -1,4 +1,3 @@
-import React from "react";
 import { SiInstagram, SiDiscord } from "react-icons/si";
 import { LiaLinkSolid } from "react-icons/lia";
 import { FaLinkedinIn } from "react-icons/fa";
