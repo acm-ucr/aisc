@@ -1,5 +1,11 @@
+import HotelBookingApp from "@/components/projects/HotelBookingApp";
+
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <div>
+      <HotelBookingApp />
+    </div>
+  );
 };
 
 export default Projects;
