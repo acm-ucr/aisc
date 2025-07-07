@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Raleway, Pixelify_Sans } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 const raleway = Raleway({
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: LayoutProps) {
           <Navbar />
           {children}
         </ReactQueryClientProvider>
+        <Footer />
       </body>
     </html>
   );
