@@ -3,8 +3,8 @@ import Logo from "@/public/aisc_logo.webp";
 
 const HotelBookingApp = () => {
   return (
-    <div className="flex flex-row items-start bg-gradient-to-r from-white to-blue-300 p-3">
-      <div className="flex w-1/2 flex-col gap-2 p-5">
+    <div className="to-aisc-blue/50 flex flex-row items-start bg-gradient-to-r from-white p-3">
+      <div className="flex w-2/3 flex-col gap-2 p-5">
         <p className="text-xl font-bold">Hotel Booking App</p>
         <p className="text-lg">
           This project involves designing a hotel booking app to cater to
@@ -13,7 +13,7 @@ const HotelBookingApp = () => {
         </p>
       </div>
       <Image
-        className="mx-auto h-40 w-60 rounded-2xl"
+        className="mx-auto h-[20vh] w-[25vw] rounded-2xl"
         src={Logo}
         alt="Hotel Booking App Logo"
       />
