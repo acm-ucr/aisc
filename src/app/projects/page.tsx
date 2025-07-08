@@ -1,5 +1,11 @@
+import SkinLesionsDescription from "@/components/projects/SkinLesionsDescription";
+
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <>
+      <SkinLesionsDescription />
+    </>
+  );
 };
 
 export default Projects;
