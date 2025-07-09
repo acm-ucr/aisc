@@ -1,8 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
 const NotFound = () => {
-  const router = useRouter();
   const textStyle =
     "[text-shadow:-1px_-1px_0_#FFF,1px_-1px_0_#FFF,-1px_1px_0_#FFF,1px_1px_0_#FFF,2px_4px_4.4px_#51B7FF]";
 
