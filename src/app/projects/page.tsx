@@ -1,5 +1,7 @@
+import ChatbotDescription from "@/components/projects/ChatbotDescription";
+
 const Projects = () => {
-  return <div>Projects</div>;
+  return <ChatbotDescription></ChatbotDescription>;
 };
 
 export default Projects;
