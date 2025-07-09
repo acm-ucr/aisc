@@ -1,5 +1,3 @@
-import React from "react";
-
 const WhatWeOffer = () => {
   return (
     <div className="mx-auto my-20 flex w-1/2 flex-col items-center text-center">
