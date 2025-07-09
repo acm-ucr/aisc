@@ -9,7 +9,7 @@ const ChatbotDescription = () => {
         alt="Add Alt here" //replace with actual alt
         className="w-[40vw] rounded-3xl object-cover md:h-50"
       />
-      <div className="flex w-2/3 flex-col gap-5 justify-self-end">
+      <div className="flex w-2/3 flex-col gap-5">
         <p className="text-2xl font-bold"> Personal Assistant Chatbot </p>
         <p className="text-xl">
           Make your own personal assistant chatbot, designed to set reminders,
