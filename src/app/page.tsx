@@ -1,9 +1,9 @@
-import Example from "@/components/Example";
+import SpotifyDescription from "@/components/projects/SpotifyDescription";
 
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      <Example text1="Adjust" text2="these" text3="Props" />
+    <div className="flex min-h-screen w-screen items-center justify-center p-8">
+      <SpotifyDescription />
     </div>
   );
 };
