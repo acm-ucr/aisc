@@ -1,5 +1,11 @@
+import CarPriceDescription from "@/components/projects/CarPriceDescription";
+
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <>
+      <CarPriceDescription />
+    </>
+  );
 };
 
 export default Projects;
