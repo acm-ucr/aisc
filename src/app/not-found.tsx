@@ -8,11 +8,20 @@ const NotFound = () => {
 
   return (
     <div className="from-aisc-pink to-aisc-blue flex min-h-screen min-w-screen items-center justify-center bg-gradient-to-r">
-      <div className="from-aisc-blue to-aisc-pink flex flex-col rounded-2xl bg-gradient-to-r p-[3px]">
-        <div className="bg-aisc-gray font-aisc-alt h-full w-full rounded-2xl px-80 py-30">
-          <p className={`${textStyle} text-9xl`}>404</p>
-          <p className={`${textStyle} text-6xl`}>ERROR</p>
-          <Button onClick={() => router.push("/")}>Home</Button>
+      <div className="from-aisc-blue to-aisc-pink rounded-2xl bg-gradient-to-r p-[3px]">
+        <div className="bg-aisc-gray flex h-full w-full flex-col items-center justify-center rounded-2xl px-110 py-15">
+          <p className={`${textStyle} font-aisc-alt text-[128px]`}>404</p>
+          <p className={`${textStyle} font-aisc-alt mb-10 text-6xl text-white`}>
+            ERROR
+          </p>
+          <Button
+            className="from-aisc-blue to-aisc-pink rounded-2xl bg-gradient-to-r px-20 py-10 text-6xl font-semibold text-white"
+            asChild
+            variant="secondary"
+            size="lg"
+          >
+            <a href="/">Home</a>
+          </Button>
         </div>
       </div>
     </div>
