@@ -1,5 +1,7 @@
+import Description from "@/components/rnd/Description";
+
 const RND = () => {
-  return <div>R&D</div>;
+  return <Description />;
 };
 
 export default RND;
