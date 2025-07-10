@@ -5,7 +5,7 @@ const SkinLesionsDescription = () => {
   return (
     <div className="flex items-center bg-white p-3">
       <Image
-        className="flex w-1/3 rounded-xl object-cover"
+        className="flex h-[20vh] w-[25vw] rounded-2xl object-cover"
         src={Logo}
         alt="AISC Logo"
       />
