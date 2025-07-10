@@ -1,6 +1,7 @@
 import Landing from "@/components/home/Landing";
 import Description from "@/components/home/Description";
 import StatisticsBar from "@/components/home/StatisticsBar";
+import Demo from "@/components/Demo";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Landing />
       <Description />
       <StatisticsBar />
+      <Demo />
     </>
   );
 };
