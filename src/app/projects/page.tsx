@@ -6,9 +6,9 @@ const Projects = () => {
   return (
     <>
       <CarPriceDescription />
+      <SkinLesionsDescription />
       <HotelBookingApp />
       <ChatbotDescription />
-      <SkinLesionsDescription />
     </>
   );
 };
