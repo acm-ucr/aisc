@@ -2,7 +2,7 @@ const WhatWeOffer = () => {
   return (
     <div className="mx-auto my-20 flex w-1/2 flex-col items-center text-center">
       <p className="w-1/2 text-2xl font-semibold">What we Offer</p>
-      <p className="my-6 text-xl leading-6 text-balance">
+      <p className="my-6 text-xl">
         From hands-on technical workshops and speaker panels to career
         development events and interdisciplinary projects, AISC Riverside offers
         opportunities to grow in technical, creative, and entrepreneurial
