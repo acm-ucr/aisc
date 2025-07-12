@@ -39,7 +39,7 @@ const NotFound = () => {
           </div>
 
           <Button
-            className="from-aisc-blue to-aisc-pink h-2/12 w-3/12 rounded-2xl bg-gradient-to-r text-3xl font-semibold text-white md:text-7xl"
+            className="from-aisc-blue to-aisc-pink h-2/12 w-3/12 rounded-2xl bg-gradient-to-r text-xl font-semibold text-white sm:text-2xl md:text-4xl"
             asChild
             variant="secondary"
             size="lg"
