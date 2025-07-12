@@ -1,10 +1,14 @@
-import Example from "@/components/Example";
+import Landing from "@/components/home/Landing";
+import Description from "@/components/home/Description";
+import StatisticsBar from "@/components/home/StatisticsBar";
 
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      <Example text1="Adjust" text2="these" text3="Props" />
-    </div>
+    <>
+      <Landing />
+      <Description />
+      <StatisticsBar />
+    </>
   );
 };
 
