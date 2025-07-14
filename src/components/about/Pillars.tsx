@@ -19,11 +19,11 @@ const Pillars = () => {
           description="Celebrating diversity in AI, fostering innovation through varied perspectives"
         />
       </div>
-      <div className = "w-full px-7"> 
+      <div className="w-full px-7">
         <Image
           src={pillarsImage}
           alt="Add Alt here" //replace with actual alt
-          className="h-[33vh] w-full object-cover rounded-4xl"
+          className="h-[33vh] w-full rounded-4xl object-cover"
         />
       </div>
     </div>
@@ -31,7 +31,7 @@ const Pillars = () => {
 };
 export default Pillars;
 
-const Pillar = ({ title, description}) => {
+const Pillar = ({ title, description }) => {
   return (
     <div className="flex w-[20vw] flex-col gap-5">
       <p className="text-3xl font-bold">{title}</p>
