@@ -1,5 +1,11 @@
+import RandD from "@/components/about/R&D";
+
 const About = () => {
-  return <div>About</div>;
+  return (
+    <>
+      <RandD />;
+    </>
+  );
 };
 
 export default About;
