@@ -9,9 +9,13 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, link }) => {
   return (
-    <div className="mx-auto flex h-120 w-145 flex-col">
+    <div className="mx-auto flex h-auto w-4/5 flex-col">
       <div className="bg-aisc-gray/25 rounded-t-4xl">
-        <Image src={image} alt={title} className="h-60 w-full object-cover" />
+        <Image
+          src={image}
+          alt={title}
+          className="h-[30vh] w-full object-cover"
+        />
       </div>
       <div className="bg-aisc-lightgray/25 flex flex-col gap-4 rounded-b-4xl p-8">
         <p className="text-4xl">{title}</p>
