@@ -5,22 +5,44 @@ import Link from "next/link";
 import Image from "next/image";
 import AISClogo from "@/public/aisc_logo.webp";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
   const pathName = usePathname();
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <nav className="from-aisc-blue to-aisc-pink font-aisc-main bg-linear-to-r/shorter">
-      <div className="flex justify-between py-4 text-white">
+      {/* Mobile Header */}
+      <div className="flex items-center justify-between px-4 py-4 text-white md:hidden">
+        <Link href="/" className="flex items-center gap-4">
+          <Image src={AISClogo} alt="logo" className="w-10" />
+          <div className="text-2xl">UCR AISC</div>
+        </Link>
+        <button
+          onClick={toggleMobileMenu}
+          className="p-2 text-3xl text-white focus:outline-none"
+        >
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/*Desktop*/}
+      <div className="hidden justify-between py-4 text-white md:flex lg:flex">
         <Link
           href="/"
           className="ml-[2%] flex items-center gap-4 hover:scale-105"
         >
           <Image src={AISClogo} alt="logo" className="w-10" />
-          <div className="text-2xl lg:text-3xl">UCR AISC</div>
+          <div className="text-3xl">UCR AISC</div>
         </Link>
 
-        <div className="mr-[3%] flex items-center gap-8 text-2xl transition lg:gap-14 lg:text-3xl">
+        <div className="mr-[3%] hidden items-center gap-8 text-2xl transition md:flex lg:flex lg:gap-14 lg:text-3xl">
           {tags.map(({ link, title }) => (
             <div key={link}>
               <Link
@@ -44,6 +66,31 @@ const Navigation = () => {
           </Link>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="from-aisc-blue to-aisc-pink font-aisc-main z-50 flex w-full flex-col bg-linear-to-r/shorter px-6 text-2xl text-white shadow-lg transition-all duration-200 ease-in-out md:hidden">
+          {tags.map(({ link, title }) => (
+            <Link
+              href={link}
+              key={link}
+              onClick={() => setMobileMenuOpen(false)}
+              className={`text-center underline-offset-2 transition hover:underline ${
+                pathName === link ? "text-aisc-yellow underline" : "underline"
+              }`}
+            >
+              {title}
+            </Link>
+          ))}
+          <Link
+            href="https:/linktr.ee/aiscucr"
+            target="_blank"
+            className="mb-2 text-center underline underline-offset-2 transition"
+          >
+            Join
+          </Link>
+        </div>
+      )}
     </nav>
   );
 };
