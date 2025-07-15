@@ -5,7 +5,7 @@ const Pillars = () => {
   return (
     <div className="bg-aisc-gray flex w-full flex-col gap-10 px-20 py-10 text-center text-white">
       <p className="text-3xl font-bold">Our 3 Pillars</p>
-      <div className="flex w-full flex-row place-content-between">
+      <div className="flex w-full flex-row justify-evenly">
         <Pillar
           title="ACCESSIBILITY"
           description="Promoting AI accessibility for all by breaking down the barriers to knowledge and opportunity"
