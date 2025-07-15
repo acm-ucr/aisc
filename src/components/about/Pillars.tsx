@@ -3,9 +3,9 @@ import pillarsImage from "@/public/placeholders/workshop.webp"; //replace with a
 
 const Pillars = () => {
   return (
-    <div className="bg-aisc-gray flex w-full flex-col gap-10 px-20 py-10 text-center text-white">
+    <div className="bg-aisc-gray place_content_evenly flex w-full flex-col gap-10 px-20 py-10 text-center text-white">
       <p className="text-3xl font-bold">Our 3 Pillars</p>
-      <div className="flex w-full flex-row justify-evenly">
+      <div className="flex flex-row place-content-between">
         <Pillar
           title="ACCESSIBILITY"
           description="Promoting AI accessibility for all by breaking down the barriers to knowledge and opportunity"
@@ -19,13 +19,11 @@ const Pillars = () => {
           description="Celebrating diversity in AI, fostering innovation through varied perspectives"
         />
       </div>
-      <div className="w-full px-8">
-        <Image
-          src={pillarsImage}
-          alt="Add Alt here" //replace with actual alt
-          className="h-[33vh] w-full rounded-4xl object-cover"
-        />
-      </div>
+      <Image
+        src={pillarsImage}
+        alt="Add Alt here" //replace with actual alt
+        className="mx-auto h-[70vh] w-9/10 rounded-4xl object-cover"
+      />
     </div>
   );
 };
