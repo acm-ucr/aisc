@@ -1,4 +1,4 @@
-import { RDArticlesData } from "../../data/RDArticlesData";
+import { RDArticlesData } from "@/data/RDArticlesData";
 import Image from "next/image";
 
 const RDArticles = () => {
@@ -8,7 +8,7 @@ const RDArticles = () => {
         {RDArticlesData.map(({ Link, Picture, Alt }, index) => (
           <a key={index} href={Link}>
             <Image
-              className="bg-aisc-gray/10 relative h-full w-full rounded-4xl object-cover"
+              className="bg-aisc-gray/10 h-full w-full rounded-4xl object-cover"
               src={Picture}
               alt={Alt}
               width={500}
