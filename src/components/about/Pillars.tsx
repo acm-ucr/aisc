@@ -3,7 +3,7 @@ import pillarsImage from "@/public/placeholders/workshop.webp"; //replace with a
 
 const Pillars = () => {
   return (
-    <div className="bg-aisc-gray place_content_evenly flex w-full flex-col gap-10 px-20 py-10 text-center text-white">
+    <div className="bg-aisc-gray flex-col gap-10 px-20 py-10 text-center text-white">
       <p className="text-3xl font-bold">Our 3 Pillars</p>
       <div className="flex flex-row place-content-between">
         <Pillar
