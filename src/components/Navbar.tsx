@@ -67,7 +67,6 @@ const Navigation = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="from-aisc-blue to-aisc-pink font-aisc-main z-50 flex w-full flex-col bg-linear-to-r/shorter px-6 text-2xl text-white shadow-lg transition-all duration-200 ease-in-out md:hidden">
           {tags.map(({ link, title }) => (
