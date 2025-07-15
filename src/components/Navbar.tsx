@@ -18,7 +18,6 @@ const Navigation = () => {
 
   return (
     <nav className="from-aisc-blue to-aisc-pink font-aisc-main bg-linear-to-r/shorter">
-      {/* Mobile Header */}
       <div className="flex items-center justify-between px-4 py-4 text-white md:hidden">
         <Link href="/" className="flex items-center gap-4">
           <Image src={AISClogo} alt="logo" className="w-10" />
