@@ -1,5 +1,10 @@
+import AboutUs from "@/components/about/AboutUs";
 const About = () => {
-  return <div>About</div>;
+  return (
+    <>
+      <AboutUs />
+    </>
+  );
 };
 
 export default About;
