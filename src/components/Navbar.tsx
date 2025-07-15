@@ -1,6 +1,6 @@
 "use client";
 
-import { tags } from "@/data/NavbarData";
+import tags from "@/data/NavbarData";
 import Link from "next/link";
 import Image from "next/image";
 import AISClogo from "@/public/aisc_logo.webp";
