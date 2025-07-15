@@ -1,4 +1,3 @@
-import RDArticles from "./RDArticles";
 
 const Description = () => {
   return (
@@ -8,7 +7,6 @@ const Description = () => {
         HumansForAI page with over 1K+ subscribers. Our team writes weekly
         newsletters with current job postings, AI industry updates and more!
       </div>
-      <RDArticles />
     </>
   );
 };
