@@ -1,6 +1,6 @@
 import Logo from "@/public/aisc_logo.webp";
 
-export const ProjectInfo = [
+const ProjectInfo = [
   {
     image: Logo,
     title: "Title",
@@ -22,3 +22,5 @@ export const ProjectInfo = [
     link: "link4",
   },
 ];
+
+export default ProjectInfo;

@@ -9,7 +9,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, link }) => {
   return (
-    <div className="mx-auto flex h-auto w-4/5 flex-col">
+    <div className="mx-auto flex w-4/5 flex-col">
       <div className="bg-aisc-gray/25 rounded-t-4xl">
         <Image
           src={image}
