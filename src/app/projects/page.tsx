@@ -1,13 +1,15 @@
 import ChatbotDescription from "@/components/projects/ChatbotDescription";
-import CarPriceDescription from "@/components/projects/CarPriceDescription";
 import HotelBookingApp from "@/components/projects/HotelBookingApp";
+import SkinLesionsDescription from "@/components/projects/SkinLesionsDescription";
+import CarPriceDescription from "@/components/projects/CarPriceDescription";
 
 const Projects = () => {
   return (
     <>
-      <CarPriceDescription />
-      <HotelBookingApp />
       <ChatbotDescription />
+      <HotelBookingApp />
+      <SkinLesionsDescription />
+      <CarPriceDescription />
     </>
   );
 };
