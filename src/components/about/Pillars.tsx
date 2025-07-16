@@ -22,7 +22,7 @@ const Pillars = () => {
       <Image
         src={pillarsImage}
         alt="Add Alt here" //replace with actual alt
-        className="mx-auto h-[70vh] w-9/10 rounded-4xl object-cover"
+        className="mx-auto mt-10 h-[70vh] w-9/10 rounded-4xl object-cover"
       />
     </div>
   );
