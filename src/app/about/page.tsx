@@ -3,10 +3,10 @@ import AboutUs from "@/components/about/AboutUs";
 const About = () => {
   return (
     <>
-    <AboutUs />
-    <Pillars />
+      <AboutUs />
+      <Pillars />
     </>
-  )
+  );
 };
 
 export default About;
