@@ -1,5 +1,7 @@
+import Pillars from "@/components/about/Pillars";
+
 const About = () => {
-  return <div>About</div>;
+  return <Pillars></Pillars>;
 };
 
 export default About;
