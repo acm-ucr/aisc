@@ -1,10 +1,12 @@
+import Pillars from "@/components/about/Pillars";
 import AboutUs from "@/components/about/AboutUs";
 const About = () => {
   return (
     <>
-      <AboutUs />
+    <AboutUs />
+    <Pillars />
     </>
-  );
+  )
 };
 
 export default About;

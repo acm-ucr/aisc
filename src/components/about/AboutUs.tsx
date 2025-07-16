@@ -11,7 +11,7 @@ const AboutUs = () => {
           <Image
             src={aboutUsImageOne}
             alt="Our Values"
-            className="mb-4 h-[25vh] w-[80vw] max-w-[300px] rounded-3xl object-cover"
+            className="mb-4 h-[25vh] w-2/3 rounded-3xl object-cover"
           />
           <p className="mb-2 text-xl font-medium"> Our Values</p>
           <p>
@@ -23,9 +23,9 @@ const AboutUs = () => {
           <Image
             src={aboutUsImageTwo}
             alt="Our Values"
-            className="mb-4 h-[25vh] w-[80vw] max-w-[300px] rounded-3xl object-cover"
+            className="mb-4 h-[25vh] w-2/3 rounded-3xl object-cover"
           />
-          <p className="mb-2 text-xl font-medium"> Our Values</p>
+          <p className="mb-2 text-xl font-medium"> Our Mission</p>
           <p>
             Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
             ipsum Lorem ipsum
