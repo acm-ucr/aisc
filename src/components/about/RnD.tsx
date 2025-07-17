@@ -31,6 +31,6 @@ const RandD = () => {
       </div>
     </div>
   );
-};
+}; 
 
 export default RandD;
