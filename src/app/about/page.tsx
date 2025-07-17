@@ -1,4 +1,4 @@
-import RandD from "@/components/about/RnD";
+import RandD from "@/components/about/RandD";
 import Pillars from "@/components/about/Pillars";
 import AboutUs from "@/components/about/AboutUs";
 import Header from "@/components/Header";
