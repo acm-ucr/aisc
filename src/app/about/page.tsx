@@ -1,7 +1,12 @@
 import Pillars from "@/components/about/Pillars";
-
+import AboutUs from "@/components/about/AboutUs";
 const About = () => {
-  return <Pillars></Pillars>;
+  return (
+    <>
+      <AboutUs />
+      <Pillars />
+    </>
+  );
 };
 
 export default About;
