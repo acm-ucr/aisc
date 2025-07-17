@@ -20,7 +20,7 @@ const RandD = () => {
             newsletters with current job postings, AI industry updates and more!
           </p>
           <Button
-            asChild 
+            asChild
             className="bg-aisc-blue h-13 w-45 justify-self-center rounded-4xl text-xl"
           >
             <Link href="/rnd" target="_blank">

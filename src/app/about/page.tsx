@@ -10,7 +10,7 @@ const About = () => {
       <Header text="About Us" image={Placeholder} alt="about us" />
       <AboutUs />
       <Pillars />
-      <RandD />; 
+      <RandD />;
     </>
   );
 };
