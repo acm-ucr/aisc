@@ -1,5 +1,12 @@
+import Header from "@/components/Header";
+import Placeholder from "@/public/placeholders/ambiguous.webp";
+
 const Events = () => {
-  return <div>Events</div>;
+  return (
+    <>
+      <Header text="Events" image={Placeholder} alt="events" />
+    </>
+  );
 };
 
 export default Events;
