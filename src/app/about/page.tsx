@@ -1,4 +1,4 @@
-import RandD from "@/components/about/R&D";
+import RandD from "@/components/about/RnD";
 
 const About = () => {
   return (
