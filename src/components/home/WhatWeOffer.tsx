@@ -1,4 +1,9 @@
 import Image from "next/image";
+import internEventImage from "@/public/placeholders/intern_event.webp";
+import projectsImage from "@/public/placeholders/projects.webp";
+import competitive from "@/public/placeholders/competitive_projects.webp";
+import speakerEventImage from "@/public/placeholders/speaker_event.webp";
+
 const WhatWeOffer = () => {
   return (
     <div>
@@ -14,56 +19,54 @@ const WhatWeOffer = () => {
           UCR!
         </p>
       </div>
-      <div className="font-aisc-main mx-auto mt-5 mb-20 flex w-11/12 flex-row items-center justify-center space-x-10 text-center text-3xl">
+      <div className="mx-auto mt-5 mb-20 flex w-11/12 flex-row items-center justify-center space-x-10 text-center text-3xl">
         <div className="flex flex-col">
-          <div className="relative mb-5 h-66 w-70 overflow-hidden rounded-3xl">
-            <Image
-              src="../placeholders/intern_event.webp"
-              alt="Intern Event"
-              className="object-cover"
-              fill
-            />
-          </div>
+          <Image
+            src={internEventImage}
+            alt="Intern Event"
+            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
+            width={272}
+            height={240}
+          />
 
-          <h1>NETWORKING</h1>
-          <h1>EVENTS</h1>
+          <p>NETWORKING</p>
+          <p>EVENTS</p>
         </div>
         <div className="flex flex-col">
-          <div className="relative mx-auto mb-5 h-66 w-75 overflow-hidden rounded-3xl">
-            <Image
-              src="../placeholders/projects.webp"
-              alt="Projects"
-              className="object-cover"
-              fill
-            />
-          </div>
-          <h1>TECHNICAL</h1>
-          <h1>CONSULTING</h1>
+          <Image
+            src={projectsImage}
+            alt="Projects"
+            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
+            width={272}
+            height={240}
+          />
+
+          <p>TECHNICAL</p>
+          <p>CONSULTING</p>
         </div>
         <div className="flex flex-col">
-          <div className="relative mx-auto mb-5 h-66 w-75 overflow-hidden rounded-3xl">
-            <Image
-              src="../placeholders/competitive_projects.webp"
-              alt="Competitive Projects"
-              className="object-cover"
-              fill
-            />
-          </div>
-          <h1>CASE</h1>
-          <h1>COMPETITIONS</h1>
+          <Image
+            src={competitive}
+            alt="Competitive Projects"
+            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
+            width={272}
+            height={240}
+          />
+
+          <p>CASE</p>
+          <p>COMPETITIONS</p>
         </div>
 
         <div className="flex flex-col">
-          <div className="relative mx-auto mb-5 h-66 w-75 overflow-hidden rounded-3xl">
-            <Image
-              src="../placeholders/speaker_event.webp"
-              alt="Speaker Event"
-              className="object-cover"
-              fill
-            />
-          </div>
-          <h1>DYNAMIC</h1>
-          <h1>WORKSHOPS</h1>
+          <Image
+            src={speakerEventImage}
+            alt="Speaker Event"
+            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
+            width={272}
+            height={240}
+          />
+          <p>DYNAMIC</p>
+          <p>WORKSHOPS</p>
         </div>
       </div>
     </div>
