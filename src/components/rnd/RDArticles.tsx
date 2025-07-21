@@ -3,21 +3,22 @@ import Image from "next/image";
 
 const RDArticles = () => {
   return (
-    <>
-      <div className="grid grid-cols-1 gap-10 px-12 py-5 sm:px-40 md:grid-cols-3 md:grid-rows-2 md:px-20 md:py-10 lg:px-40">
-        {RDArticlesData.map(({ Link, Picture, Alt }, index) => (
-          <a key={index} href={Link}>
-            <Image
-              className="bg-aisc-gray/10 h-[25vh] w-full rounded-4xl object-cover"
-              src={Picture}
-              alt={Alt}
-              width={500}
-              height={500}
-            />
-          </a>
-        ))}
-      </div>
-    </>
+    <div className="grid grid-cols-1 py-8 gap-10 px-8 md:grid-cols-3 md:grid-rows-2 md:px-20 lg:px-40">
+      {RDArticlesData.map(({ Link, Picture, Alt }, index) => (
+        <a
+          key={index}
+          href={Link}
+          target="_blank"
+          className="flex flex-col"
+        >
+          <Image
+            className="bg-aisc-gray/10 h-[25vh] w-2/3 md:w-full mx-auto rounded-4xl object-cover"
+            src={Picture}
+            alt={Alt}
+          />
+        </a>
+      ))}
+    </div>
   );
 };
 
