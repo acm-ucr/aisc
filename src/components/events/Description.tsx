@@ -4,7 +4,7 @@ import Placeholder from "@/public/placeholders/ambiguous.webp";
 const Description = () => {
   return (
     <>
-      <div className="grid grid-cols-3 gap-18 p-10 my-5">
+      <div className="my-5 grid grid-cols-3 gap-18 p-10">
         <div className="flex flex-col items-center gap-2">
           <p className="self-start text-2xl font-bold">Lorem Ipsum</p>
           <Image
