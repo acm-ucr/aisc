@@ -11,8 +11,6 @@ const Description = () => {
             className="h-1/4 w-full rounded-4xl object-cover"
             src={Placeholder}
             alt="Placeholder Event"
-            width={0}
-            height={0}
           />
           <p className="p-8 text-center text-lg">
             Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
@@ -25,8 +23,6 @@ const Description = () => {
             className="h-1/4 w-full rounded-4xl object-cover"
             src={Placeholder}
             alt="Placeholder Event"
-            width={0}
-            height={0}
           />
           <p className="p-8 text-center text-lg">
             Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
@@ -39,8 +35,6 @@ const Description = () => {
             className="h-1/4 w-full rounded-4xl object-cover"
             src={Placeholder}
             alt="Placeholder Event"
-            width={0}
-            height={0}
           />
           <p className="p-8 text-center text-lg">
             Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
