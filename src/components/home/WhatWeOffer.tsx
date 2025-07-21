@@ -25,8 +25,6 @@ const WhatWeOffer = () => {
             src={internEventImage}
             alt="Intern Event"
             className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
-            width={272}
-            height={240}
           />
 
           <p>NETWORKING</p>
@@ -37,8 +35,6 @@ const WhatWeOffer = () => {
             src={projectsImage}
             alt="Projects"
             className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
-            width={272}
-            height={240}
           />
 
           <p>TECHNICAL</p>
@@ -49,8 +45,6 @@ const WhatWeOffer = () => {
             src={competitive}
             alt="Competitive Projects"
             className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
-            width={272}
-            height={240}
           />
 
           <p>CASE</p>
@@ -62,8 +56,6 @@ const WhatWeOffer = () => {
             src={speakerEventImage}
             alt="Speaker Event"
             className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
-            width={272}
-            height={240}
           />
           <p>DYNAMIC</p>
           <p>WORKSHOPS</p>
