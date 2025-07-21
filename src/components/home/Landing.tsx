@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Landing = () => {
   return (
-    <div className="bg-aisc-gray flex h-[70vh] w-full flex-col items-center justify-center">
+    <div className="bg-aisc-gray flex h-[40vh] sm:h-[70vh] w-full flex-col items-center justify-center">
       <div className="font-aisc-main pb-6 text-center text-4xl text-white sm:pb-8 sm:text-5xl lg:pb-12 lg:text-6xl">
         <div>UCR AI STUDENT</div>
         <div className="sm:pt-1 lg:pt-2">COLLECTIVE</div>

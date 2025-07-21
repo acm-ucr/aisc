@@ -130,6 +130,6 @@
   }
   html,
   body {
-    @apply bg-background text-foreground w-full max-w-[100vw] overflow-x-hidden;
+    @apply bg-background text-foreground;
   }
 }
