@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import LinkedinLogo from "@/public/linkedin_logo.webp";
+import { FaLinkedin } from "react-icons/fa";
 
 type Properties = {
   headshot: StaticImageData;
@@ -15,13 +15,13 @@ const Board = ({ headshot, name, role, linkedin }: Properties) => {
       <Image
         src={headshot}
         alt="headshot"
-        className="rounded-full object-center"
+        className="aspect-square rounded-full object-cover object-center"
       />
       <div className="pt-4 text-2xl font-semibold">{name}</div>
       <div className="pt-4 text-2xl">{role}</div>
       <div className="items-center justify-center pt-4">
         <Link href={linkedin}>
-          <Image src={LinkedinLogo} alt="linkedin" className="mx-auto w-15" />
+          <FaLinkedin className="fill-aisc-blue mx-auto h-15 w-15" />
         </Link>
       </div>
     </div>
