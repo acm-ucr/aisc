@@ -6,7 +6,7 @@ import speakerEventImage from "@/public/placeholders/speaker_event.webp";
 
 const WhatWeOffer = () => {
   return (
-    <div>
+    <>
       <div className="mx-auto mt-20 flex w-1/2 flex-col items-center text-center">
         <p className="w-1/2 text-2xl font-semibold">What we Offer</p>
         <p className="my-6 text-xl">
@@ -19,7 +19,7 @@ const WhatWeOffer = () => {
           UCR!
         </p>
       </div>
-      <div className="mx-auto mt-5 mb-20 flex w-11/12 flex-row items-center justify-center space-x-10 text-center text-3xl">
+      <div className="mx-auto mt-5 mb-20 flex w-11/12 items-center justify-center space-x-10 text-center text-3xl">
         <div className="flex flex-col">
           <Image
             src={internEventImage}
@@ -61,7 +61,7 @@ const WhatWeOffer = () => {
           <p>WORKSHOPS</p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
