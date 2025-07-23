@@ -1,8 +1,18 @@
+import Landing from "@/components/home/Landing";
+import Description from "@/components/home/Description";
+import StatisticsBar from "@/components/home/StatisticsBar";
+import Projects from "@/components/home/Projects";
+import WhatWeOffer from "@/components/home/WhatWeOffer";
+
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Hello World
-    </div>
+    <>
+      <Landing />
+      <Description />
+      <StatisticsBar />
+      <WhatWeOffer />
+      <Projects />
+    </>
   );
 };
 

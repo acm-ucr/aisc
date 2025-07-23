@@ -10,6 +10,7 @@
 ![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+
 ## Figma
 
 [AISC Figma Design File](https://www.figma.com/design/I4IrVOPjV5PGpFLctwGJjd/Spring--25--AISC?node-id=0-1&p=f&t=cUlHTOWhHkUFkue2-0)
