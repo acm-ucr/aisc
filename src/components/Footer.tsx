@@ -6,7 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <span className="from-aisc-blue to-aisc-pink block h-1 w-full bg-gradient-to-r" />
+      <span className="from-aisc-pink to-aisc-blue block h-1 w-full bg-gradient-to-r" />
 
       <div className="font-aisc-main bg-aisc-black flex flex-row items-center justify-between p-4 px-7 text-white sm:text-xl md:px-14 md:pt-10 md:pb-18 md:text-2xl lg:text-3xl">
         <Link className="block md:hidden" href={"/"}>
