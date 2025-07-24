@@ -31,7 +31,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en" className={`${raleway.variable} ${pixelify.variable}`}>
-      <body className={raleway.className}>
+      <body className={`${raleway.className} overflow-x-hidden`}>
         <ReactQueryClientProvider>
           <Navbar />
           {children}
