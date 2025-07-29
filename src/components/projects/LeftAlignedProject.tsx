@@ -10,7 +10,7 @@ interface ProjectsProps {
 
 const LeftAlignedProject = ({ image, title, description }: ProjectsProps) => {
   return (
-    <div className="to-aisc-blue/50 flex flex-col items-center bg-gradient-to-r from-white from-5% to-95% p-3 md:flex-row">
+    <div className="to-aisc-blue/50 flex flex-col items-center bg-gradient-to-r from-white from-5% to-95% p-3 sm:flex-row">
       <div className="flex w-2/3 flex-col gap-2 p-5">
         <p className="text-2xl font-bold">{title}</p>
         <p className="text-xl">{description}</p>
