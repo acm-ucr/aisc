@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Raleway, Pixelify_Sans } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -29,8 +31,12 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en" className={`${raleway.variable} ${pixelify.variable}`}>
-      <body className={raleway.className}>
-        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+      <body className={`${raleway.className} overflow-x-hidden`}>
+        <ReactQueryClientProvider>
+          <Navbar />
+          {children}
+        </ReactQueryClientProvider>
+        <Footer />
       </body>
     </html>
   );

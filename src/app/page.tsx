@@ -1,10 +1,18 @@
-import SpotifyDescription from "@/components/projects/SpotifyDescription";
+import Landing from "@/components/home/Landing";
+import Description from "@/components/home/Description";
+import StatisticsBar from "@/components/home/StatisticsBar";
+import Projects from "@/components/home/Projects";
+import WhatWeOffer from "@/components/home/WhatWeOffer";
 
 const Home = () => {
   return (
-    <div className="flex min-h-screen w-screen items-center justify-center p-8">
-      <SpotifyDescription />
-    </div>
+    <>
+      <Landing />
+      <Description />
+      <StatisticsBar />
+      <WhatWeOffer />
+      <Projects />
+    </>
   );
 };
 
