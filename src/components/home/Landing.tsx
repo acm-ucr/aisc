@@ -1,21 +1,42 @@
+"use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { motion } from "motion/react";
 
 const Landing = () => {
   return (
     <div className="bg-aisc-gray flex h-[40vh] w-full flex-col items-center justify-center sm:h-[70vh]">
-      <div className="font-aisc-main pb-6 text-center text-4xl text-white sm:pb-8 sm:text-5xl lg:pb-12 lg:text-6xl">
+      <motion.div
+        className="font-aisc-main pb-6 text-center text-4xl text-white sm:pb-8 sm:text-5xl lg:pb-12 lg:text-6xl"
+        initial={{ opacity: 0, y: -10 }}
+        transition={{ duration: 0.8 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <div>UCR AI STUDENT</div>
         <div className="sm:pt-1 lg:pt-2">COLLECTIVE</div>
-      </div>
-      <Button
-        asChild
-        className="bg-aisc-blue h-9 w-24 rounded-4xl text-2xl sm:h-12 sm:w-32 sm:text-3xl lg:h-15 lg:w-40 lg:text-4xl"
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: -10, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
       >
-        <Link href="https:/linktr.ee/aiscucr" target="_blank">
-          JOIN
-        </Link>
-      </Button>
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          initial={{ scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Button
+            asChild
+            className="bg-aisc-blue h-9 w-24 rounded-4xl text-2xl sm:h-12 sm:w-32 sm:text-3xl lg:h-15 lg:w-40 lg:text-4xl"
+          >
+            <Link href="https:/linktr.ee/aiscucr" target="_blank">
+              JOIN
+            </Link>
+          </Button>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
