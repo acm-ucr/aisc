@@ -13,13 +13,13 @@ import Image from "next/image";
 
 export default function CarouselDemo() {
   return (
-    <div className="my-20 flex w-full items-center justify-center">
+    <div className="my-20 flex justify-center">
       <Carousel className="w-2/3 max-w-7xl md:w-3/4">
         <CarouselContent className="">
           {CarouselData.map(({ Picture, Alt }, index) => (
             <CarouselItem key={index}>
               <div className="p-1">
-                <Card className="relative flex aspect-7/3 h-fit items-center justify-center overflow-hidden p-0">
+                <Card className="relative flex aspect-7/3 overflow-hidden">
                   <Image
                     src={Picture}
                     alt={Alt}
