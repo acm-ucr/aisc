@@ -9,18 +9,18 @@ const Description = () => {
       <motion.div
         className="text-xl sm:text-2xl"
         initial={{ opacity: 0, y: 10 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.8 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         <div>Welcome to UCR&apos;s AI Student Collective!</div>
       </motion.div>
       <motion.div
         className="my-4 text-base leading-6 text-balance sm:my-5 sm:text-xl lg:my-6"
         initial={{ opacity: 0, y: 10 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.8 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         <div>
           The Artificial Intelligence Student Collective at UC Riverside is a
@@ -33,9 +33,9 @@ const Description = () => {
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 10 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         <motion.div
           whileHover={{ scale: 1.1 }}
