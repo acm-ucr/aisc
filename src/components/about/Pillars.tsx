@@ -43,7 +43,7 @@ const Pillar = ({
       <p className="text-base font-bold sm:text-lg md:text-xl lg:text-2xl">
         {title}
       </p>
-      <p className="text-sm leading-7 sm:text-base md:text-lg lg:text-xl">
+      <p className="text-sm sm:text-base md:text-lg lg:text-xl">
         {description}
       </p>
     </div>

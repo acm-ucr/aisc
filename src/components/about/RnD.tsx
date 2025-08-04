@@ -11,7 +11,7 @@ const RandD = () => {
         <Image
           src={Placeholder}
           alt="Image"
-          className="h-[30vh] w-[60vh] justify-self-center rounded-2xl sm:h-[35vh] md:h-[40vh] lg:h-[45vh]"
+          className="h-[30vh] w-[60vh] justify-self-center rounded-2xl object-cover sm:h-[35vh] md:h-[40vh] lg:h-[45vh]"
         />
         <div className="grid-row-2 grid">
           <p className="pt-0 pb-5 text-center text-sm sm:pt-6 sm:text-base md:pt-7 md:text-lg lg:pt-9 lg:text-xl">
