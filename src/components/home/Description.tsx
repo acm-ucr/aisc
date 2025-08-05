@@ -22,18 +22,18 @@ const Description = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}
       >
-        <div>
+        <p>
           The Artificial Intelligence Student Collective at UC Riverside is a
           passionate student-led chapter committed to making AI education
           accessible, inclusive, and empowering. As part of the national AISC
           network, we aim to cultivate a space where students from all
           backgrounds can explore, build, and thrive in the world of AI and
           emerging technology.
-        </div>
+        </p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 10 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
+        transition={{ duration: 0.8 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}
       >
