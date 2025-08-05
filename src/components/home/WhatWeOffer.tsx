@@ -13,7 +13,7 @@ const WhatWeOffer = () => {
         className="mx-auto mt-20 flex w-1/2 flex-col items-center text-center"
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2 }}
+        transition={{ duration: 1 }}
       >
         <p className="w-1/2 text-2xl font-semibold">What We Offer</p>
         <p className="my-6 text-xl">
@@ -31,7 +31,7 @@ const WhatWeOffer = () => {
           className="flex flex-col"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2 }}
+          transition={{ duration: 0.8 }}
         >
           <Image
             src={internEventImage}
@@ -46,7 +46,7 @@ const WhatWeOffer = () => {
           className="flex flex-col"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.15 }}
+          transition={{ duration: 0.8, delay: 0.15 }}
         >
           <Image
             src={projectsImage}
@@ -62,7 +62,7 @@ const WhatWeOffer = () => {
           className="flex flex-col"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
         >
           <Image
             src={competitive}
@@ -77,7 +77,7 @@ const WhatWeOffer = () => {
           className="flex flex-col"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.45 }}
+          transition={{ duration: 0.8, delay: 0.45 }}
         >
           <Image
             src={speakerEventImage}
