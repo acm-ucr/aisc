@@ -4,7 +4,7 @@ import { board } from "@/data/Board";
 const BoardMap = () => {
   return (
     <div className="p-20">
-      <div className="flex justify-center gap-20">
+      <div className="justify-center gap-20 md:flex">
         {board.slice(0, 2).map(({ image, name, position, linkedin }, index) => (
           <Board
             key={index}
@@ -15,7 +15,7 @@ const BoardMap = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center gap-30">
+      <div className="justify-center gap-30 md:flex">
         {board.slice(2, 5).map(({ image, name, position, linkedin }, index) => (
           <Board
             key={index}
@@ -26,7 +26,7 @@ const BoardMap = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center gap-30">
+      <div className="justify-center gap-30 md:flex">
         {board.slice(5, 8).map(({ image, name, position, linkedin }, index) => (
           <Board
             key={index}
@@ -37,7 +37,7 @@ const BoardMap = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center">
+      <div className="justify-center md:flex">
         {board.slice(8, 9).map(({ image, name, position, linkedin }, index) => (
           <Board
             key={index}
