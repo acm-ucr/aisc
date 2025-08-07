@@ -1,11 +1,18 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 const NotFound = () => {
   return (
     <div className="from-aisc-pink to-aisc-blue flex h-screen w-full items-center justify-center bg-gradient-to-r pb-24">
-      <div className="from-aisc-blue to-aisc-pink h-8/12 w-9/12 rounded-2xl bg-gradient-to-r p-[3px]">
+      <motion.div
+        className="from-aisc-blue to-aisc-pink h-8/12 w-9/12 rounded-2xl bg-gradient-to-r p-[3px]"
+        initial={{ opacity: 0, y: 10 }}
+        transition={{ duration: 0.8 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+      >
         <div className="bg-aisc-gray flex h-full w-full flex-col items-center justify-center gap-y-8 rounded-2xl p-15">
           <div className="flex flex-col items-center justify-center">
             <p
@@ -39,7 +46,7 @@ const NotFound = () => {
           </div>
 
           <Button
-            className="from-aisc-blue to-aisc-pink h-2/12 w-3/12 rounded-2xl bg-gradient-to-r text-xl font-semibold text-white sm:text-2xl md:text-4xl"
+            className="from-aisc-blue to-aisc-pink h-2/12 w-3/12 rounded-2xl bg-gradient-to-r text-xl font-semibold text-white hover:scale-105 sm:text-2xl md:text-4xl"
             asChild
             variant="secondary"
             size="lg"
@@ -47,7 +54,7 @@ const NotFound = () => {
             <Link href="/">Home</Link>
           </Button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
