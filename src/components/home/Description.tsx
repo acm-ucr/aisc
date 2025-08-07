@@ -1,7 +1,16 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useState } from "react";
 
 const Description = () => {
+  //let count: number = 0;
+  const [count, setCount] = useState(0);
+  const increment = () => {
+    //count += 1;
+    setCount(count + 1);
+    console.log("updating count", count);
+  };
   return (
     <div className="mx-auto my-20 flex w-7/8 flex-col items-center text-center sm:w-3/4 lg:w-1/2">
       <p className="text-xl sm:text-2xl">
@@ -18,6 +27,13 @@ const Description = () => {
       <Button className="bg-aisc-blue hover:bg-aisc-black rounded-3xl text-base sm:text-xl">
         <Link href="/about">Learn more About Us!</Link>
       </Button>
+      <p className="text-2xl font-bold">count: {count}</p>
+      <button
+        className="cursor-pointer border-1 border-black p-1"
+        onClick={increment}
+      >
+        Increment Count
+      </button>
     </div>
   );
 };
