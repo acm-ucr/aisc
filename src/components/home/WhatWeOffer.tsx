@@ -10,13 +10,13 @@ const WhatWeOffer = () => {
   return (
     <>
       <motion.div
-        className="mx-auto mt-5 flex w-3/4 flex-col items-center text-center md:mt-20 md:w-1/2"
+        className="mx-auto mt-20 flex w-1/2 flex-col items-center text-center"
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <p className="w-1/2 text-xl font-semibold md:text-3xl">What We Offer</p>
-        <p className="my-6 hidden text-xl md:block">
+        <p className="w-1/2 text-2xl font-semibold">What We Offer</p>
+        <p className="my-6 text-xl">
           From hands-on technical workshops and speaker panels to career
           development events and interdisciplinary projects, AISC Riverside
           offers opportunities to grow in technical, creative, and
@@ -26,9 +26,9 @@ const WhatWeOffer = () => {
           UCR!
         </p>
       </motion.div>
-      <div className="mx-8 my-5 flex flex-wrap items-center justify-center gap-5 text-center text-sm md:mb-20 md:w-11/12 md:space-x-10 md:text-2xl lg:text-3xl">
+      <div className="mx-auto mt-5 mb-20 flex w-11/12 items-center justify-center space-x-10 text-center text-3xl">
         <motion.div
-          className="flex flex-col items-center"
+          className="flex flex-col"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -36,14 +36,14 @@ const WhatWeOffer = () => {
           <Image
             src={internEventImage}
             alt="Intern Event"
-            className="mb-5 h-[35vw] w-[40vw] overflow-hidden rounded-3xl object-cover md:h-[15vw] md:w-[17vw]"
+            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
           />
           <p>NETWORKING</p>
           <p>EVENTS</p>
         </motion.div>
 
         <motion.div
-          className="flex flex-col items-center"
+          className="flex flex-col"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
@@ -51,7 +51,7 @@ const WhatWeOffer = () => {
           <Image
             src={projectsImage}
             alt="Projects"
-            className="mb-5 h-[35vw] w-[40vw] overflow-hidden rounded-3xl object-cover md:h-[15vw] md:w-[17vw]"
+            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
           />
 
           <p>TECHNICAL</p>
@@ -59,7 +59,7 @@ const WhatWeOffer = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col items-center"
+          className="flex flex-col"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -67,14 +67,14 @@ const WhatWeOffer = () => {
           <Image
             src={competitive}
             alt="Competitive Projects"
-            className="mb-5 h-[35vw] w-[40vw] overflow-hidden rounded-3xl object-cover md:h-[15vw] md:w-[17vw]"
+            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
           />
           <p>CASE</p>
           <p>COMPETITIONS</p>
         </motion.div>
 
         <motion.div
-          className="flex flex-col items-center"
+          className="flex flex-col"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.45 }}
@@ -82,7 +82,7 @@ const WhatWeOffer = () => {
           <Image
             src={speakerEventImage}
             alt="Speaker Event"
-            className="mb-5 h-[35vw] w-[40vw] overflow-hidden rounded-3xl object-cover md:h-[15vw] md:w-[17vw]"
+            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
           />
           <p>DYNAMIC</p>
           <p>WORKSHOPS</p>
