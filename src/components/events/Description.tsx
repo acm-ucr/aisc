@@ -5,12 +5,12 @@ import Placeholder from "@/public/placeholders/ambiguous.webp";
 import { motion } from "motion/react";
 
 const Description = () => {
-  const sampleAnimation = {
+  const fadeIn = {
     initial: { opacity: 0, y: -20 },
     whileInView: (index: number) => ({
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, delay: index * 0.3 },
+      transition: { duration: 0.5, delay: index * 0.2 },
     }),
     viewport: { once: true },
   };
@@ -22,7 +22,7 @@ const Description = () => {
           <motion.div
             key={i}
             custom={i}
-            variants={sampleAnimation}
+            variants={fadeIn}
             initial="initial"
             whileInView="whileInView"
             className="flex h-[50rem] flex-col items-center gap-2"
