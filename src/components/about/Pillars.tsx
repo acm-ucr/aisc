@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import pillarsImage from "@/public/placeholders/workshop.webp"; //replace with actual image
+import pillarsImage from "@/public/placeholders/workshop.webp";
 import { motion } from "motion/react";
 
 const Pillars = () => {
@@ -60,7 +60,7 @@ const Pillars = () => {
       >
         <Image
           src={pillarsImage}
-          alt="Add Alt here" //replace with actual alt
+          alt="Add Alt here"
           className="mx-auto h-[50vh] w-9/10 rounded-4xl object-cover sm:mt-5 sm:h-[60vh] md:h-[70vh] lg:mt-10"
         />
       </motion.div>
