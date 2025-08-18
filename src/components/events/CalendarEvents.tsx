@@ -15,6 +15,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
+//Temporary Events for show
 const dummyEvents: EventProps[] = [
   {
     title: "Test Event",
@@ -102,7 +103,7 @@ const Events = () => {
           mode="single"
           selected={new Date()}
           className="mx-auto w-full"
-          events={dummyEvents}
+          events={dummyEvents} //replace this with data from fetching after review
           setCurrent={setCurrent}
         />
       </div>
