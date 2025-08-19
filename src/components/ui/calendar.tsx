@@ -69,9 +69,7 @@ const CalendarDayCell = ({
     eventStartDate.setHours(0, 0, 0, 0);
     eventEndDate.setHours(23, 59, 59, 999);
 
-    return (
-      date >= eventStartDate && date <= eventEndDate
-    );
+    return date >= eventStartDate && date <= eventEndDate;
   });
 
   return (

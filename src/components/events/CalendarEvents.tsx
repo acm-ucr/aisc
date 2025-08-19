@@ -25,27 +25,68 @@ future.setDate(future.getDate() + 15);
 const dummyEvents: EventProps[] = [
   {
     title: "Test Event",
-    start: new Date(today.getFullYear(), today.getMonth(), today.getDate(), 10, 0, 0).toISOString(),
-    end: new Date(today.getFullYear(), today.getMonth(), today.getDate(), 11, 0, 0).toISOString(),
+    start: new Date(
+      today.getFullYear(),
+      today.getMonth(),
+      today.getDate(),
+      10,
+      0,
+      0,
+    ).toISOString(),
+    end: new Date(
+      today.getFullYear(),
+      today.getMonth(),
+      today.getDate(),
+      11,
+      0,
+      0,
+    ).toISOString(),
     location: "UCR Campus",
     description: "This is just a test event",
   },
   {
     title: "Event Before",
-    start: new Date(yesterday.getFullYear(), yesterday.getMonth(), yesterday.getDate(), 0, 0, 0).toISOString(),
-    end: new Date(yesterday.getFullYear(), yesterday.getMonth(), yesterday.getDate(), 11, 0, 0).toISOString(),
+    start: new Date(
+      yesterday.getFullYear(),
+      yesterday.getMonth(),
+      yesterday.getDate(),
+      0,
+      0,
+      0,
+    ).toISOString(),
+    end: new Date(
+      yesterday.getFullYear(),
+      yesterday.getMonth(),
+      yesterday.getDate(),
+      11,
+      0,
+      0,
+    ).toISOString(),
     location: "UCR Campus",
     description: "This is just a test event",
   },
   {
     title: "Future Event",
-    start: new Date(future.getFullYear(), future.getMonth(), future.getDate(), 14, 0, 0).toISOString(),
-    end: new Date(future.getFullYear(), future.getMonth(), future.getDate(), 15, 0, 0).toISOString(),
+    start: new Date(
+      future.getFullYear(),
+      future.getMonth(),
+      future.getDate(),
+      14,
+      0,
+      0,
+    ).toISOString(),
+    end: new Date(
+      future.getFullYear(),
+      future.getMonth(),
+      future.getDate(),
+      15,
+      0,
+      0,
+    ).toISOString(),
     location: "UCR Campus",
     description: "This is a future test event",
-  }
+  },
 ];
-
 
 const Events = () => {
   const [current, setCurrent] = useState<EventProps>({});
