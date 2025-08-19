@@ -4,7 +4,7 @@ import { board } from "@/data/Board";
 const BoardMap = () => {
   return (
     <div className="p-20">
-      <div className="hidden md:flex">
+      <div className="hidden lg:flex">
         {board.slice(0, 2).map(({ image, name, position, linkedin }, index) => (
           <Board
             key={index}
@@ -15,7 +15,7 @@ const BoardMap = () => {
           />
         ))}
       </div>
-      <div className="hidden grid-cols-3 md:grid">
+      <div className="hidden grid-cols-3 lg:grid">
         {board.slice(2, 8).map(({ image, name, position, linkedin }, index) => (
           <Board
             key={index}
@@ -26,7 +26,7 @@ const BoardMap = () => {
           />
         ))}
       </div>
-      <div className="hidden md:flex">
+      <div className="hidden lg:flex">
         {board.slice(8, 9).map(({ image, name, position, linkedin }, index) => (
           <Board
             key={index}
@@ -38,7 +38,7 @@ const BoardMap = () => {
         ))}
       </div>
 
-      <div className="md:hidden">
+      <div className="lg:hidden">
         {board.map(({ image, name, position, linkedin }, index) => (
           <Board
             key={index}

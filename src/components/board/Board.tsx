@@ -11,7 +11,7 @@ type Properties = {
 
 const Board = ({ headshot, name, role, linkedin }: Properties) => {
   return (
-    <div className="mx-auto w-105 pb-14 text-center md:w-56">
+    <div className="s:w-105 mx-auto pb-14 text-center md:w-56">
       <Image
         src={headshot}
         alt="headshot"
