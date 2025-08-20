@@ -1,12 +1,20 @@
+"use client";
 import Image from "next/image";
 import aboutUsImageOne from "@/public/placeholders/women_in_tech_event.webp";
 import aboutUsImageTwo from "@/public/placeholders/ambiguous.webp";
+import { motion } from "motion/react";
 
 const AboutUs = () => {
   return (
     <div className="p-12">
       <div className="flex flex-col items-center justify-center gap-12 md:flex-row">
-        <div className="flex max-w-md flex-col items-center text-center md:w-1/2">
+        <motion.div
+          className="flex max-w-md flex-col items-center text-center md:w-1/2"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           <Image
             src={aboutUsImageOne}
             alt="Our Values"
@@ -17,8 +25,14 @@ const AboutUs = () => {
             Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
             ipsum Lorem ipsum
           </p>
-        </div>
-        <div className="flex max-w-md flex-col items-center text-center md:w-1/2">
+        </motion.div>
+        <motion.div
+          className="flex max-w-md flex-col items-center text-center md:w-1/2"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           <Image
             src={aboutUsImageTwo}
             alt="Our Values"
@@ -29,7 +43,7 @@ const AboutUs = () => {
             Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
             ipsum Lorem ipsum
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
