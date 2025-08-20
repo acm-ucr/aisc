@@ -13,9 +13,7 @@ const AboutUs = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          whileHover={{ scale: 1.02 }}
           viewport={{ once: true }}
-          whileTap={{ scale: 0.95 }}
         >
           <Image
             src={aboutUsImageOne}
@@ -33,9 +31,7 @@ const AboutUs = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          whileHover={{ scale: 1.02 }}
           viewport={{ once: true }}
-          whileTap={{ scale: 0.95 }}
         >
           <Image
             src={aboutUsImageTwo}
