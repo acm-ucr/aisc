@@ -1,5 +1,7 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 interface ProjectCardProps {
   image: StaticImageData;
@@ -9,7 +11,12 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, link }) => {
   return (
-    <div className="mx-auto flex w-4/5 flex-col">
+    <motion.div
+      className="mx-auto flex w-4/5 flex-col"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.75 }}
+    >
       <Image
         src={image}
         alt={title}
@@ -21,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, link }) => {
           Learn More →
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
