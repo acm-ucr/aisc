@@ -80,7 +80,7 @@ const CalendarDayCell = ({
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
-        className={`${isToday ? "bg-aisc-blue" : currentMonth ? "bg-transparent" : "bg-aisc-black"} flex min-h-[100px] flex-col items-end overflow-y-auto border-1 p-1 md:min-h-[150px] lg:min-h-[200px] max-h-[200px] no-scrollbar`}
+        className={`${isToday ? "bg-aisc-blue" : currentMonth ? "bg-transparent" : "bg-aisc-black"} no-scrollbar flex max-h-[200px] min-h-[100px] flex-col items-end overflow-y-auto border-1 p-1 md:min-h-[150px] lg:min-h-[200px]`}
       >
         <p
           className={`${currentMonth ? "" : "opacity-80"} ${isToday && "font-bold text-white"} text-fit sticky top-0 m-1 rounded-xl bg-transparent px-1 text-center md:text-left md:text-xl`}

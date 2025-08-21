@@ -92,7 +92,7 @@ const Events = () => {
           mode="single"
           selected={new Date()}
           className="mx-auto w-full"
-          events={data} 
+          events={data}
           setCurrent={setCurrent}
         />
       </div>
