@@ -136,7 +136,7 @@ const Events = () => {
             <DialogHeader>
               <DialogTitle>
                 <p className="text-4xl font-medium">{current.title}</p>
-                <p className="font-openSans my-2 flex flex-col gap-1 text-base">
+                <div className="font-openSans my-2 flex flex-col gap-1 text-base">
                   <p>Location: {current.location}</p>
                   Time:{" "}
                   {new Date(current.start as string).toLocaleTimeString(
@@ -151,7 +151,7 @@ const Events = () => {
                     hour: "2-digit",
                     minute: "2-digit",
                   })}
-                </p>
+                </div>
               </DialogTitle>
               <DialogDescription className="font-aisc-alt relative text-black">
                 {current.description}

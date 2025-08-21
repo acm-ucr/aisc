@@ -73,53 +73,56 @@ const CalendarDayCell = ({
   });
 
   return (
-    <motion.div
-      variants={slideDown}
-      transition={{ ...transition, delay: 0.2 }}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
-      className={`${isToday ? "bg-aisc-blue" : currentMonth ? "bg-transparent" : "bg-aisc-black"} flex min-h-[200px] w-full flex-col items-end overflow-y-auto border-1 p-1`}
-    >
-      <p
-        className={`${currentMonth ? "" : "opacity-80"} ${isToday && "font-bold text-white"} text-fit sticky top-0 m-1 rounded-xl bg-transparent px-1 text-center md:text-left md:text-xl`}
+    <td className="align-top p-0 w-full">
+      <motion.div
+        variants={slideDown}
+        transition={{ ...transition, delay: 0.2 }}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        className={`${isToday ? "bg-aisc-blue" : currentMonth ? "bg-transparent" : "bg-aisc-black"} flex min-h-[100px] md:min-h-[150px] lg:min-h-[200px] flex-col items-end overflow-y-auto border-1 p-1`}
       >
-        {date.getDate()}
-      </p>
+        <p
+          className={`${currentMonth ? "" : "opacity-80"} ${isToday && "font-bold text-white"} text-fit sticky top-0 m-1 rounded-xl bg-transparent px-1 text-center md:text-left md:text-xl`}
+        >
+          {date.getDate()}
+        </p>
 
-      {filteredEvents?.map(
-        ({ title, start, end, location, description }, index) => {
-          const startDate = new Date(start as string);
-          if (
-            startDate.getDate() === date.getDate() &&
-            startDate.getMonth() === date.getMonth() &&
-            startDate.getFullYear() === date.getFullYear()
-          ) {
-            return (
-              <motion.div
-                key={index}
-                variants={slideUp}
-                transition={{ ...transition, delay: 0.2 }}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.2 }}
-                className={`${isToday ? "bg-aisc-lightgray" : "bg-aisc-blue"} bghover:bg-opacity-100 font-aisc-alt mb-1 flex w-full cursor-pointer rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-1 text-center font-medium transition hover:opacity-60`}
-                onClick={() =>
-                  setCurrent({ title, start, end, location, description })
-                }
-              >
-                <span className="my-auto w-full overflow-clip rounded-md bg-white text-xs text-black md:text-base">
-                  {title}
-                </span>
-              </motion.div>
-            );
-          }
-          return null;
-        },
-      )}
-    </motion.div>
+        {filteredEvents?.map(
+          ({ title, start, end, location, description }, index) => {
+            const startDate = new Date(start as string);
+            if (
+              startDate.getDate() === date.getDate() &&
+              startDate.getMonth() === date.getMonth() &&
+              startDate.getFullYear() === date.getFullYear()
+            ) {
+              return (
+                <motion.div
+                  key={index}
+                  variants={slideUp}
+                  transition={{ ...transition, delay: 0.2 }}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.2 }}
+                  className={`${isToday ? "bg-aisc-lightgray" : "bg-aisc-blue"} bghover:bg-opacity-100 font-aisc-alt mb-1 flex w-full cursor-pointer rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-1 text-center font-medium transition hover:opacity-60`}
+                  onClick={() =>
+                    setCurrent({ title, start, end, location, description })
+                  }
+                >
+                  <span className="my-auto w-full overflow-clip rounded-md bg-white text-xs text-black md:text-base">
+                    {title}
+                  </span>
+                </motion.div>
+              );
+            }
+            return null;
+          },
+        )}
+      </motion.div>
+    </td>
   );
 };
+
 
 function Calendar({
   className,
