@@ -1,6 +1,9 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
+import { motion } from "motion/react";
 
 type Properties = {
   headshot: StaticImageData;
@@ -12,6 +15,10 @@ type Properties = {
 const Board = ({ headshot, name, role, linkedin }: Properties) => {
   return (
     <div className="s:w-105 mx-auto pb-14 text-center md:w-56">
+    <motion.div whileHover={{
+      scale: 1.05,
+      transition: { duration: 0.2 }
+    }}>
       <Image
         src={headshot}
         alt="headshot"
@@ -24,6 +31,7 @@ const Board = ({ headshot, name, role, linkedin }: Properties) => {
           <FaLinkedin className="fill-aisc-blue mx-auto h-15 w-15" />
         </Link>
       </div>
+      </motion.div>
     </div>
   );
 };
