@@ -10,7 +10,7 @@ const WhatWeOffer = () => {
   return (
     <>
       <motion.div
-        className="mx-auto mt-20 flex w-1/2 flex-col items-center text-center"
+        className="mx-auto mt-20 flex w-10/12 flex-col items-center text-center md:w-1/2"
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -26,9 +26,9 @@ const WhatWeOffer = () => {
           UCR!
         </p>
       </motion.div>
-      <div className="mx-auto mt-5 mb-20 flex w-11/12 items-center justify-center space-x-10 text-center text-3xl">
+      <div className="spacer-x-0 mx-auto mt-5 mb-20 flex w-11/12 flex-col items-center justify-center text-center text-2xl md:flex-row md:space-x-10 md:text-3xl">
         <motion.div
-          className="flex flex-col"
+          className="flex flex-col items-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -36,14 +36,14 @@ const WhatWeOffer = () => {
           <Image
             src={internEventImage}
             alt="Intern Event"
-            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
+            className="mb-5 h-[20vh] w-[70vw] overflow-hidden rounded-3xl object-cover md:h-[15vw] md:w-[17vw]"
           />
           <p>NETWORKING</p>
           <p>EVENTS</p>
         </motion.div>
 
         <motion.div
-          className="flex flex-col"
+          className="flex flex-col items-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
@@ -51,7 +51,7 @@ const WhatWeOffer = () => {
           <Image
             src={projectsImage}
             alt="Projects"
-            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
+            className="mb-5 h-[20vh] w-[70vw] overflow-hidden rounded-3xl object-cover md:h-[15vw] md:w-[17vw]"
           />
 
           <p>TECHNICAL</p>
@@ -59,7 +59,7 @@ const WhatWeOffer = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col"
+          className="flex flex-col items-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -67,14 +67,14 @@ const WhatWeOffer = () => {
           <Image
             src={competitive}
             alt="Competitive Projects"
-            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
+            className="mb-5 h-[20vh] w-[70vw] overflow-hidden rounded-3xl object-cover md:h-[15vw] md:w-[17vw]"
           />
           <p>CASE</p>
           <p>COMPETITIONS</p>
         </motion.div>
 
         <motion.div
-          className="flex flex-col"
+          className="flex flex-col items-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.45 }}
@@ -82,7 +82,7 @@ const WhatWeOffer = () => {
           <Image
             src={speakerEventImage}
             alt="Speaker Event"
-            className="mb-5 h-[15vw] w-[17vw] overflow-hidden rounded-3xl object-cover"
+            className="mb-5 h-[20vh] w-[70vw] overflow-hidden rounded-3xl object-cover md:h-[15vw] md:w-[17vw]"
           />
           <p>DYNAMIC</p>
           <p>WORKSHOPS</p>

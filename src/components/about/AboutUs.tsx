@@ -22,8 +22,12 @@ const AboutUs = () => {
           />
           <p className="mb-2 text-xl font-medium"> Our Values</p>
           <p>
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-            ipsum Lorem ipsum
+            The AI Student Collective is a national network of student
+            organizations dedicated to providing accessible AI & tech literacy
+            through professional development programs and events. The Collective
+            stands on the three pillars of accessibility, literacy, and
+            diversity and works to create a more equitable future in technology
+            by leveraging industry connections to elevate student experiences.
           </p>
         </motion.div>
         <motion.div
@@ -40,8 +44,12 @@ const AboutUs = () => {
           />
           <p className="mb-2 text-xl font-medium"> Our Mission</p>
           <p>
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-            ipsum Lorem ipsum
+            Each quarter is marked by high-impact events, such as symposia,
+            panels, and product competitions, as well as local opportunities
+            such as workshops, technical consulting, and corporate networking.
+            Our community at UC Riverside is 500+ strong, and we look forward to
+            continuing our impact on the student community both locally and
+            nationally.
           </p>
         </motion.div>
       </div>

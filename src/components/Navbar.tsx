@@ -3,7 +3,7 @@
 import tags from "@/data/NavbarData";
 import Link from "next/link";
 import Image from "next/image";
-import AISClogo from "@/public/aisc_logo.webp";
+import AISClogo from "@/public/aisc_logo.png";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
