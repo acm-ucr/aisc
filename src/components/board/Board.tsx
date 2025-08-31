@@ -21,10 +21,6 @@ const Board = ({ headshot, name, role, linkedin }: Properties) => {
           opacity: 1,
           transition: { duration: 0.5 },
         }}
-        whileHover={{
-          scale: 1.05,
-          transition: { duration: 0.1 },
-        }}
       >
         <Image
           src={headshot}
@@ -33,11 +29,18 @@ const Board = ({ headshot, name, role, linkedin }: Properties) => {
         />
         <div className="pt-4 text-2xl font-semibold">{name}</div>
         <div className="pt-4 text-2xl">{role}</div>
-        <div className="items-center justify-center pt-4">
-          <Link href={linkedin}>
+        <motion.div
+          initial={{ scale: 1 }}
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.2 },
+          }}
+          className="items-center justify-center pt-4"
+        >
+          <Link href={linkedin} target="_blank">
             <FaLinkedin className="fill-aisc-blue mx-auto h-15 w-15" />
           </Link>
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );

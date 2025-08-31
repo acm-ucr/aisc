@@ -1,4 +1,4 @@
-import Logo from "@/public/aisc_logo.webp";
+import Logo from "@/public/aisc_logo.png";
 
 const ProjectsData = [
   {
