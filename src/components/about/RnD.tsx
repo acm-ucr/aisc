@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Placeholder from "@/public/aisc_logo.png";
+import Placeholder from "@/public/aisc_logo.webp";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 

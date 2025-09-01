@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { footerLinks } from "@/data/FooterLinks";
-import AISClogo from "@/public/aisc_logo.png";
+import AISClogo from "@/public/aisc_logo.webp";
 import Image from "next/image";
 import { motion } from "motion/react";
 
